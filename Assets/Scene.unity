@@ -2137,6 +2137,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47fd61e65189cd748a70468885959929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Crocodile
+  atkRange: 0
+  player: {fileID: 0}
 --- !u!4 &1042100267 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 473078, guid: 988fc297a71d24254ba0a364fda65476, type: 3}
@@ -2821,7 +2823,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1001 &1381454559
 PrefabInstance:
   m_ObjectHideFlags: 0

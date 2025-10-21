@@ -13,7 +13,7 @@ public class Charactor : MonoBehaviour
     protected Rigidbody2D rb;
 
     //Intialize variable
-    public void intialize(int startHealth)
+    public void Intialize(int startHealth)
     {
         Health = startHealth;
         Debug.Log($"{this.name} is initialize Health Health : {this.Health}");

@@ -4,14 +4,23 @@ public class Charactor : MonoBehaviour
 {
     //attributes
     private int health;
-    public int Health {  
-        get { return health; } 
+    public int Health {
+        get { return health; }
         set { health = (value < 0 ? 0 : value); }
     }
 
     protected Animator anim;
     protected Rigidbody2D rb;
 
+    //Intialize variable
+    public void intialize(int startHealth)
+    {
+        Health = startHealth;
+        Debug.Log($"{this.name} is initialize Health Health : {this.Health}");
+
+        anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
+    }
 
     public void TakeDamage(int damage)
     {
@@ -46,4 +55,5 @@ public class Charactor : MonoBehaviour
     {
         
     }
+
 }

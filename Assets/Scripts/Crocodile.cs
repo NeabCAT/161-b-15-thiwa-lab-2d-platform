@@ -25,7 +25,7 @@ public class Crocodile : Enemy, IShootable
 
         //set timers variables for thorwing rock
         WaitTime = 0.0f;
-        ReloadTime = 5.0f; // thorw Rock every 5 sec
+        ReloadTime = 2.0f; // thorw Rock every 5 sec
     }
 
     private void FixedUpdate()

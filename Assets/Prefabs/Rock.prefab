@@ -178,6 +178,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf15adff9b3f8f74397425668eeca948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Rock
-  damage: 0
+  damage: 20
   rb: {fileID: 5076126}
   force: {x: 0, y: 0}

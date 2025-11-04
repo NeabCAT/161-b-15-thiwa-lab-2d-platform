@@ -31,11 +31,12 @@ public abstract class Weapon : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+
         Charactor charactor = other.GetComponent<Charactor>();
         if (charactor != null)
         {
             OnHitWith(other.GetComponent<Charactor>());
-            Destroy(this.gameObject, 5f);
+            Destroy(this.gameObject);
         }
     }
 

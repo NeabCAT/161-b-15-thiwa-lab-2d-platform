@@ -16,8 +16,8 @@ public class Crocodile : Enemy, IShootable
 
     void Start()
     {
-        base.Intialize(50);
-        DamageHit = 30;
+        base.Intialize(80);
+        DamageHit = 10;
 
         //set atk range and target
         atkRange = 6.0f;

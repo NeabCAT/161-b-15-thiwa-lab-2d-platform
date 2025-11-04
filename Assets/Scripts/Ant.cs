@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Diagnostics;
-using System.Threading;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Ant : Enemy
 {
@@ -12,7 +9,7 @@ public class Ant : Enemy
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        base.Intialize(20);
+        base.Intialize(100);
         DamageHit = 20;
 
         //set speed and direction of movement

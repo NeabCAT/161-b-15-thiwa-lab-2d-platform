@@ -1,6 +1,7 @@
 using System.Net.NetworkInformation;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
 
 public class Banana : Weapon
 {
@@ -16,7 +17,8 @@ public class Banana : Weapon
 
     public override void OnHitWith(Charactor charactor)
     {
-        if (charactor != null) 
+
+        if (charactor is Enemy) 
         {
             charactor.TakeDamage(this.damage);
         }

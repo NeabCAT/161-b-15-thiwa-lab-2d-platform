@@ -19,6 +19,10 @@ public class Player : Charactor , IShootable
         ReloadTime = 1.0f;
         WaitTime = 0.0f;
     }
+    private void FixedUpdate()
+    {
+        WaitTime += Time.fixedDeltaTime;
+    }
 
     // Update is called once per frame
     void Update()
@@ -26,10 +30,6 @@ public class Player : Charactor , IShootable
         Shoot();
     }
 
-    private void FixedUpdate()
-    {
-        WaitTime += Time.fixedDeltaTime;
-    }
 
     public void OnWithHit(Enemy enemy)
     {

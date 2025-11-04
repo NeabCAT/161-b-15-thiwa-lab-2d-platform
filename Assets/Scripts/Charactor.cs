@@ -19,7 +19,6 @@ public class Charactor : MonoBehaviour
     protected Animator anim;
     protected Rigidbody2D rb;
 
-    // แก้ใหม่: ใช้ Interface แทน concrete class
     [SerializeField] private MonoBehaviour healthBarComponent;
     private IHealthDisplay healthBar;
 

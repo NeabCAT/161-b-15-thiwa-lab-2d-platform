@@ -15,17 +15,17 @@ public class NoFlipHealthBar : MonoBehaviour
     {
         if (parentTransform != null)
         {
-            // เช็คว่า parent ถูก flip ไหม (Scale X เป็นลบ)
+            // เช็คว่า parent ถูก flip ไหม
             if (parentTransform.localScale.x < 0)
             {
-                // ถ้า parent flip แล้ว ให้ health bar flip กลับ
+                // ถ้า parent flip แล้วให้ health bar flip กลับ
                 Vector3 newScale = originalScale;
                 newScale.x = -Mathf.Abs(originalScale.x);
                 transform.localScale = newScale;
             }
             else
             {
-                // ถ้า parent ปกติ ให้ health bar ปกติ
+                // ถ้า parent ปกติให้ health bar ปกติ
                 transform.localScale = originalScale;
             }
         }
